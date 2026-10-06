@@ -1,0 +1,8 @@
+#!/bin/bash
+echo Cosito para automatizar
+read -p "Nombre del archivo?" val1
+read -p "Que pones en el commit?" val2
+chmod u+x $val1
+git add $val1
+git commit -m "$val2"
+git push
