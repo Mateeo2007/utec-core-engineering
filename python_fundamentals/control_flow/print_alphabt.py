@@ -2,4 +2,4 @@
 for letter in range(ord("a"), ord("z") + 1):
     if chr(letter) in "qe":
         continue
-    print(chr(letter), end="")
+    print("{}".format(chr(letter)), end="")
