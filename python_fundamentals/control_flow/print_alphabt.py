@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-for i in range(97, 123):
-    if chr(i) != 'e' and chr(i) != 'q':
-        print("{:s}".format(chr(i)), end="")
+for letter in range(ord("a"), ord("z") + 1):
+    if chr(letter) in "qe":
+        continue
+    print(chr(letter), end="")
+
 print()
