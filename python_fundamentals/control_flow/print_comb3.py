@@ -1,3 +1,7 @@
 #!/usr/bin/env python3
-pares = ["{}{}".format(left, right) for left in range(10) for right in range(left + 1, 10)]
-print(", ".join(pares), end="")
+for left in range(10):
+    for right in range(left + 1, 10):
+        if left == 8 and right == 9:
+            print("{}{}".format(left, right))
+        else:
+            print("{}{}".format(left, right), end=", ")
