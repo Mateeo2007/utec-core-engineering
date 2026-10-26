@@ -2,11 +2,8 @@
 if __name__ == "__main__":
     a = 10
     b = 5
-    from calculator_1 import suma
-    print("{}".format(suma(a, b)))
-    from calculator_1 import resta
-    print("{}".format(resta(a, b)))
-    from calculator_1 import multi
-    print("{}".format(multi(a, b)))
-    from calculator_1 import division
-    print("{}".format(division(a, b)))
+    import calculator_1
+    print("{}".format(calculator_1.suma(a, b)))
+    print("{}".format(calculator_1.resta(a, b)))
+    print("{}".format(calculator_1.multi(a, b)))
+    print("{}".format(calculator_1.division(a, b)))
